@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title><%= @headers['title'] %></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<meta name="generator" content="Slide Show (S9)">
+	<meta name="author" content="<%= @headers['author']%>">
+	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
+	<style>
+		#Cover H2 {
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1><%= @headers['title'] %></h1>
+		<p><%= @headers['author']%></p>
+	</header>
+	<div class="slide bg" id="Cover"><div>
+		<section>
+			<header>
+				<h2><%= @headers['title'] %></h2>
+			</header>
+			<img src="pictures/cover.jpg" alt="">
+			<!-- © John Carey, http://fiftyfootshadows.net/ -->
+		</section>
+	</div></div>
+
+<!-- todo: add slide.classes to div -->
+<!-- todo: create slide id from header? like a slug in blogs? -->
+<% @slides.each_with_index do |slide,i| %>        
+<div class="slide" id="<%= (i+2).to_s %>"><div>
+		<section>
+			<header>
+				<%= slide.header %>
+			</header>
+			<%= slide.content %>
+		</section>
+</div></div>
+<% end %>
+
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="scripts/script.js"></script>
+	<!-- Copyright © 2010–2011 Vadim Makeev, http://pepelsbey.net/ -->
+</body>
+</html>

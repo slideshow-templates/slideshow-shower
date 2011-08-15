@@ -1,0 +1,59 @@
+# Sample Slide Show (S9) template package manifest using Shower
+# - Shower by Vadim Makeev (aka pepelsbey); see https://github.com/pepelsbey/shower
+# - (Note: Template package still in development, Beta Vesion)
+#
+# Change as desired/needed 
+#
+# Configured to use the following headers in slides.html.erb:
+# 
+# author: Your Name Here
+# title: Your Slide Show Title Here
+#
+# Questions? Comments?
+# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List. 
+# http://groups.google.com/group/webslideshow
+
+__file__.html slides.html.erb
+
+# scripts
+
+scripts/script.js
+
+# styles
+
+themes/ribbon/styles/fonts.css
+themes/ribbon/styles/reset.css
+themes/ribbon/styles/style.css
+
+# graphics
+
+pictures/cover.jpg
+
+themes/ribbon/images/grid.png
+themes/ribbon/images/linen.png
+themes/ribbon/images/ribbon.svg
+
+# fonts
+
+themes/ribbon/fonts/DroidSansMono.svg
+themes/ribbon/fonts/DroidSansMono.ttf
+themes/ribbon/fonts/PTSans.Bold.Italic.svg
+themes/ribbon/fonts/PTSans.Bold.Italic.ttf
+themes/ribbon/fonts/PTSans.Bold.Italic.woff
+themes/ribbon/fonts/PTSans.Bold.svg
+themes/ribbon/fonts/PTSans.Bold.ttf
+themes/ribbon/fonts/PTSans.Bold.woff
+themes/ribbon/fonts/PTSans.Italic.svg
+themes/ribbon/fonts/PTSans.Italic.ttf
+themes/ribbon/fonts/PTSans.Italic.woff
+themes/ribbon/fonts/PTSans.Narrow.Bold.svg
+themes/ribbon/fonts/PTSans.Narrow.Bold.ttf
+themes/ribbon/fonts/PTSans.Narrow.Bold.woff
+themes/ribbon/fonts/PTSans.Narrow.svg
+themes/ribbon/fonts/PTSans.Narrow.ttf
+themes/ribbon/fonts/PTSans.Narrow.woff
+themes/ribbon/fonts/PTSans.svg
+themes/ribbon/fonts/PTSans.ttf
+themes/ribbon/fonts/PTSans.woff
+themes/ribbon/fonts/TargetBlank.otf
+themes/ribbon/fonts/TargetBlank.svg
