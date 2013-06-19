@@ -1,7 +1,14 @@
+# Shower (Ribbon Theme) - Slide Show (S9) Template Pack 
 
-## Slide Show (S9) Template Pack - Shower (Ribbon Theme)
+## What's Slide Show (S9)?
 
-The [Shower](https://github.com/pepelsbey/shower) package by Vadim Makeev bundled up into 
+A Ruby gem that lets you create slide shows and author slides in plain text
+using a wiki-style markup language that's easy-to-write and easy-to-read.
+More [Slide Show (S9) Project Site »](http://slideshow-s9.github.io)
+
+## Intro
+
+The [Shower](https://github.com/shower/shower) package by Vadim Makeev bundled up into 
 a Slide Show (S9) template pack.
 
 Note, the package is configured to use the following headers in `slides.html.erb`:
@@ -13,20 +20,25 @@ Note, the package is configured to use the following headers in `slides.html.erb
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:
 
-    $ slideshow -f https://github.com/geraldb/slideshow-shower/raw/master/shower.txt
+    $ slideshow install shower
 
-To check if the new template got installed, use the `-l/--list` switch/command:
+Or as an alternative clone the template pack using `git`. Issue the commands:
 
-    $ slideshow -l
+    $ cd ~/.slideshow/templates
+    $ git clone git://github.com/slideshow-s9/slideshow-shower.git
+
+To check if the new template got installed, use the `list` command:
+
+    $ slideshow list
 
 Listing something like:
 
     Installed templates include:
-       shower.txt (/home/gerald/.slideshow/templates/shower/shower.txt)
+       shower.txt (~/.slideshow/templates/shower/shower.txt)
 
 Now you're ready to use it using the `-t/--template` switch. Example:
 
-    $ slideshow -t shower.txt tutorial
+    $ slideshow build tutorial -t shower
 
 That's it. 
 
