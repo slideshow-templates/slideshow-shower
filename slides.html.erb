@@ -32,8 +32,8 @@
 
 <!-- todo: add slide.classes to div -->
 <!-- todo: create slide id from header? like a slug in blogs? -->
-<% @slides.each_with_index do |slide,i| %>        
-<div class="slide" id="<%= (i+2).to_s %>"><div>
+<% @slides.each_with_index do |slide,i| %>
+<div class="slide<%= ' ' + slide.classes unless slide.classes.empty? %>" id="<%= (i+2).to_s %>"><div>
 		<section>
 			<header>
 				<%= slide.header %>
