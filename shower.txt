@@ -8,6 +8,7 @@
 # 
 # author: Your Name Here
 # title: Your Slide Show Title Here
+# cover: Your Slide Show Cover Image Here
 #
 # Questions? Comments?
 # Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List. 
@@ -27,6 +28,7 @@ themes/ribbon/styles/style.css
 
 # graphics
 
+# default cover image
 pictures/cover.jpg
 
 themes/ribbon/images/grid.png

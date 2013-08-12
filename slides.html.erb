@@ -25,7 +25,8 @@
 			<header>
 				<h2><%= @headers['title'] %></h2>
 			</header>
-			<img src="pictures/cover.jpg" alt="">
+			<% cover = @headers['cover'] == "- cover not found -" ? "cover.jpg" : @headers['cover'] %>
+			<img src="pictures/<%= cover %>" alt="">
 			<!-- © John Carey, http://fiftyfootshadows.net/ -->
 		</section>
 	</div></div>
