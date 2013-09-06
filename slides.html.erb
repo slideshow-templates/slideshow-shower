@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<% lang = @headers['lang'] == "- lang not found -" ? "en-US" : @headers['lang'] %>
+<html lang="<%= lang %>">
 <head>
 	<title><%= @headers['title'] %></title>
 	<meta charset="UTF-8">
