@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<% lang = @headers['lang'] == "- lang not found -" ? "en-US" : @headers['lang'] %>
+<html lang="<%= lang %>">
 <head>
 	<title><%= @headers['title'] %></title>
 	<meta charset="UTF-8">
@@ -25,7 +26,8 @@
 			<header>
 				<h2><%= @headers['title'] %></h2>
 			</header>
-			<img src="pictures/cover.jpg" alt="">
+			<% cover = @headers['cover'] == "- cover not found -" ? "cover.jpg" : @headers['cover'] %>
+			<img src="pictures/<%= cover %>" alt="">
 			<!-- © John Carey, http://fiftyfootshadows.net/ -->
 		</section>
 	</div></div>

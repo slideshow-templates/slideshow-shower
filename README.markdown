@@ -15,6 +15,8 @@ Note, the package is configured to use the following headers in `slides.html.erb
 
     author: Your Name Here
     title: Your Slide Show Title Here
+    cover: Your Slide Show Cover Image Here
+    lang: Your Language Here
  
 ## Try It Yourself - How To Use the Template Pack
 
