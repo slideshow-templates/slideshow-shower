@@ -44,9 +44,9 @@
 <div class="slide {{ slide.classes }}" id="{{ forloop.index }}"><div>  <!-- fix: add +2 or +1 was: (i+2).to_s -->
 		<section>
 			<header>
-				<%= slide.header %>
+				{{ slide.header }}
 			</header>
-			<%= slide.content_without_header %>
+			{{ slide.content_without_header }}
 		</section>
 </div></div>
 {% endfor %}
