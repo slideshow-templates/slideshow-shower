@@ -1,20 +1,22 @@
+######################################################################
 # Sample Slide Show (S9) template package manifest using Shower
-# - Shower by Vadim Makeev (aka pepelsbey); see https://github.com/pepelsbey/shower
+# - Shower by Vadim Makeev (aka pepelsbey); see https://github.com/shower/shower
 # - (Note: Template package still in development, Beta Vesion)
 #
-# Change as desired/needed 
+# Change as desired/needed
 #
-# Configured to use the following headers in slides.html.erb:
-# 
+# Configured to use the following headers in slides.html:
+#
 # author: Your Name Here
 # title: Your Slide Show Title Here
 # cover: Your Slide Show Cover Image Here
 #
 # Questions? Comments?
-# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List. 
-# http://groups.google.com/group/webslideshow
+# Send them along to the wwwmake forum/mailing List.
+# http://groups.google.com/group/wwwmake
 
-__file__.html slides.html.erb
+
+__file__.html slides.html
 
 # scripts
 

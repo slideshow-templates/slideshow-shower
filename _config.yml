@@ -1,0 +1,21 @@
+#####
+#  GitHub Pages / Jekyll settings / config
+
+headers:
+  title:     Shower Presentation Template
+  author:    "Vadim Makeev, Opera Software"
+  cover:     pictures/cover.jpg
+  lang:      en-US
+  generator: GitHub Pages w/ Jekyll
+
+
+collections:
+  slides:
+    output: false
+
+
+exclude:
+- README.md
+- sample.md
+- shower.license.txt
+- shower.txt

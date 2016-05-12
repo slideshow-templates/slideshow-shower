@@ -1,7 +1,6 @@
 title: Shower Presentation Template
 author: Vadim Makeev, Opera Software
 
-%% todo: add support for breaking slides on h2 instead of h1 to s9 generator
 
 # Header
 
