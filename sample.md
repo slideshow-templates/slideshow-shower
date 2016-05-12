@@ -2,14 +2,14 @@ title: Shower Presentation Template
 author: Vadim Makeev, Opera Software
 
 
-# Header
+## Header
 
 This `<tool>` is provided __without__ warranty, guarantee,
 or much in the way of explanation. Note that use of this tool may or may
 not crash _your_ browser.
 
 
-# Unordered List
+## Unordered List
 
 - This tool is provided
 - Without warranty, guarantee
@@ -20,7 +20,7 @@ not crash _your_ browser.
 - Erase your hard drive
 
 
-# Ordered List
+## Ordered List
 
 1. Note that use of this tool
 2. Erase your hard drive.
@@ -31,6 +31,6 @@ not crash _your_ browser.
 4. Lock up your machine
 
 
-# Thank You
+## Thank You
 
 Questions? Comments?

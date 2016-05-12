@@ -38,15 +38,33 @@
 		</section>
 	</div></div>
 
+
 <!-- todo: add slide.classes to div -->
 <!-- todo: create slide id from header? like a slug in blogs? -->
+
+<!-- todo: check if we can assign slide.header or ??
+                                  slide.content_without_header ??
+                                  slide.classes ??
+  -->
+
 {% for slide in slides %}
-<div class="slide {{ slide.classes }}" id="{{ forloop.index }}"><div>  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+
+{% if jekyll %}
+  {% capture slide_header %}<h2>{{slide.title}}</h2>{% endcapture %}
+  {% assign slide_content_without_header = slide.content %}
+  {% assign slide_classes                = slide.classes %}
+{% else %}
+  {% capture slide_header %}{{ slide.header }}{% endcapture %}
+  {% capture slide_content_without_header %}{{ slide.content_without_header }}{% endcapture %}
+  {% capture slide_classes %}{{ slide.classes }}{% endcapture %}
+{% endif %}
+
+<div class="slide {{ slide_classes }}" id="{{ forloop.index }}"><div>  <!-- fix: add +2 or +1 was: (i+2).to_s -->
 		<section>
 			<header>
-				{{ slide.header }}
+				{{ slide_header }}
 			</header>
-			{{ slide.content_without_header }}
+			{{ slide_content_without_header }}
 		</section>
 </div></div>
 {% endfor %}

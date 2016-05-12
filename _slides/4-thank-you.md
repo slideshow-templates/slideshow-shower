@@ -1,6 +1,5 @@
 ---
+title: Thank You
 ---
-
-# Thank You
 
 Questions? Comments?
