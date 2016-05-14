@@ -7,6 +7,7 @@ headers:
   cover:     pictures/cover.jpg
   lang:      en-US
   generator: GitHub Pages w/ Jekyll
+  theme:     material
 
 
 collections:
@@ -16,6 +17,6 @@ collections:
 
 exclude:
 - README.md
+- BUILD.md
 - sample.md
-- shower.license.txt
 - shower.txt

@@ -1,6 +1,7 @@
 ---
-title: Ordered List
 ---
+
+## Ordered List
 
 1. Note that use of this tool
 2. Erase your hard drive.

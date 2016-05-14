@@ -6,75 +6,65 @@
   {% assign slides    = site.slides %}
 {% endif %}
 
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="{{ headers['lang'] }}">
 <head>
 	<title>{{ headers['title'] }}</title>
-	<meta charset="UTF-8">
-	<meta name="viewport"   content="width=1274, user-scalable=no">
-	<meta name="generator"  content="{{ headers['generator'] }}">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport"  content="width=device-width, initial-scale=1">
+  <meta name="generator"  content="{{ headers['generator'] }}">
 	<meta name="author"     content="{{ headers['author'] }}">
-	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
-	<style>
-		#Cover H2 {
-			color:#FFF;
-			text-align:center;
-			font-size:70px;
-			}
-	</style>
+	<link rel="stylesheet" href="shower/themes/{{ headers['theme'] }}/styles/screen-16x10.css">
 </head>
-<body class="list">
+<body class="shower list">
 	<header class="caption">
 		<h1>{{ headers['title'] }}</h1>
 		<p>{{ headers['author'] }}</p>
 	</header>
-	<div class="slide bg" id="Cover"><div>
-		<section>
-			<header>
-				<h2>{{ headers['title'] }}</h2>
-			</header>
-			<img src="{{ headers['cover'] }}" alt="">
-			<!-- © John Carey, http://fiftyfootshadows.net/ -->
-		</section>
-	</div></div>
+	<section class="slide" id="cover">
+		<h2>{{ headers['title'] }}</h2>
+		<p>by {{ headers['author'] }}</p>
+		<img src="{{ headers['cover'] }}" alt="" class="cover">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
 
-
-<!-- todo: add slide.classes to div -->
-<!-- todo: create slide id from header? like a slug in blogs? -->
-
-<!-- todo: check if we can assign slide.header or ??
-                                  slide.content_without_header ??
-                                  slide.classes ??
-  -->
 
 {% for slide in slides %}
-
-{% if jekyll %}
-  {% capture slide_header %}<h2>{{slide.title}}</h2>{% endcapture %}
-  {% assign slide_content_without_header = slide.content %}
-  {% assign slide_classes                = slide.classes %}
-{% else %}
-  {% capture slide_header %}{{ slide.header }}{% endcapture %}
-  {% capture slide_content_without_header %}{{ slide.content_without_header }}{% endcapture %}
-  {% capture slide_classes %}{{ slide.classes }}{% endcapture %}
-{% endif %}
-
-<div class="slide {{ slide_classes }}" id="{{ forloop.index }}"><div>  <!-- fix: add +2 or +1 was: (i+2).to_s -->
-		<section>
-			<header>
-				{{ slide_header }}
-			</header>
-			{{ slide_content_without_header }}
-		</section>
-</div></div>
+<section class="slide {{ slide.classes }}" id="{{ forloop.index }}"> <!-- fix: add +2 or +1 was: (i+2).to_s -->
+  {{ slide.content }}
+</section>
 {% endfor %}
 
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
-	<div class="progress"><div></div></div>
-	<script src="scripts/script.js"></script>
-	<!-- Copyright © 2010–2011 Vadim Makeev, http://pepelsbey.net/ -->
+
+<!--
+  To hide progress bar from entire presentation
+  just remove “progress” element.
+  -->
+<div class="progress"></div>
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>

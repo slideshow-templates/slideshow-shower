@@ -27,6 +27,7 @@ Note, the package is configured to use the following headers in `slides.html`:
     title: Your Slide Show Title Here
     cover: Your Slide Show Cover Image Here
     lang: Your Language Here
+    theme:  ribbon|material
 
 
 ## Try It Yourself - How To Use the Template Pack
