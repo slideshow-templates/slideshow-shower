@@ -60,6 +60,7 @@ That's it.
 
 
 ```
+theme: material
 title: Shower Presentation Template
 author: Vadim Makeev, Opera Software
 
@@ -99,11 +100,10 @@ not crash _your_ browser.
 Questions? Comments?
 ```
 
-(Source: sample.md)
+(Source: [`sample.md`](sample.md))
 
 
 ## Questions? Comments?
 
-Questions? Comments?
 Send them along to the [wwwmake forum/mailing list](http://groups.google.com/group/wwwmake).
 Thanks!

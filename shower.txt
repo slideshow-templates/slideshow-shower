@@ -7,6 +7,7 @@
 #
 # Configured to use the following headers in slides.html:
 #
+# theme: material|ribbon
 # author: Your Name Here
 # title: Your Slide Show Title Here
 # cover: Your Slide Show Cover Image Here
@@ -20,44 +21,37 @@ __file__.html slides.html
 
 # scripts
 
-scripts/script.js
+shower/shower.min.js
 
-# styles
+# ribbon theme
 
-themes/ribbon/styles/fonts.css
-themes/ribbon/styles/reset.css
-themes/ribbon/styles/style.css
+shower/themes/ribbon/fonts/pt-mono-regular.woff
+shower/themes/ribbon/fonts/pt-sans-bold-italic.woff
+shower/themes/ribbon/fonts/pt-sans-bold.woff
+shower/themes/ribbon/fonts/pt-sans-italic.woff
+shower/themes/ribbon/fonts/pt-sans-narrow-bold.woff
+shower/themes/ribbon/fonts/pt-sans-regular.woff
 
-# graphics
+shower/themes/ribbon/images/grid.png
+shower/themes/ribbon/images/grid@2x.png
+shower/themes/ribbon/images/ribbon.svg
 
-# default cover image
-pictures/cover.jpg
+shower/themes/ribbon/styles/screen-16x10.css
+shower/themes/ribbon/styles/screen-4x3.css
 
-themes/ribbon/images/grid.png
-themes/ribbon/images/linen.png
-themes/ribbon/images/ribbon.svg
 
-# fonts
+# material theme
 
-themes/ribbon/fonts/DroidSansMono.svg
-themes/ribbon/fonts/DroidSansMono.ttf
-themes/ribbon/fonts/PTSans.Bold.Italic.svg
-themes/ribbon/fonts/PTSans.Bold.Italic.ttf
-themes/ribbon/fonts/PTSans.Bold.Italic.woff
-themes/ribbon/fonts/PTSans.Bold.svg
-themes/ribbon/fonts/PTSans.Bold.ttf
-themes/ribbon/fonts/PTSans.Bold.woff
-themes/ribbon/fonts/PTSans.Italic.svg
-themes/ribbon/fonts/PTSans.Italic.ttf
-themes/ribbon/fonts/PTSans.Italic.woff
-themes/ribbon/fonts/PTSans.Narrow.Bold.svg
-themes/ribbon/fonts/PTSans.Narrow.Bold.ttf
-themes/ribbon/fonts/PTSans.Narrow.Bold.woff
-themes/ribbon/fonts/PTSans.Narrow.svg
-themes/ribbon/fonts/PTSans.Narrow.ttf
-themes/ribbon/fonts/PTSans.Narrow.woff
-themes/ribbon/fonts/PTSans.svg
-themes/ribbon/fonts/PTSans.ttf
-themes/ribbon/fonts/PTSans.woff
-themes/ribbon/fonts/TargetBlank.otf
-themes/ribbon/fonts/TargetBlank.svg
+shower/themes/material/fonts/roboto-bold-italic.woff
+shower/themes/material/fonts/roboto-bold.woff
+shower/themes/material/fonts/roboto-italic.woff
+shower/themes/material/fonts/roboto-light.woff
+shower/themes/material/fonts/roboto-mono-regular.woff
+shower/themes/material/fonts/roboto-regular.woff
+
+shower/themes/material/images/github.svg
+shower/themes/material/images/grid.png
+shower/themes/material/images/grid@2x.png
+
+shower/themes/material/styles/screen-16x10.css
+shower/themes/material/styles/screen-4x3.css

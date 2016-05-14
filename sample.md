@@ -1,3 +1,4 @@
+theme: material
 title: Shower Presentation Template
 author: Vadim Makeev, Opera Software
 
