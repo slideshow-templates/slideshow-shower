@@ -1,8 +1,13 @@
-# Shower (Ribbon Theme) - Slide Show (S9) Template Pack
+# Shower (Ribbon, Material) - Slide Show (S9) Template Pack
 
 ## Live Preview
 
 See [`slides.html`](http://slideshow-templates.github.io/slideshow-shower/slides.html).
+
+For testing see
+[`test.html`](http://slideshow-templates.github.io/slideshow-shower/test.html),
+[`test.ribbon.html`](http://slideshow-templates.github.io/slideshow-shower/test.ribbon.html) and
+[`test.material.html`](http://slideshow-templates.github.io/slideshow-shower/test.material.html)
 
 
 ## What's Slide Show (S9)?
